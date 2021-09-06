@@ -51,7 +51,7 @@ function ContactsForm() {
       }}
     >
       <FormWrapper>
-      <div>  <Label htmlFor={`id-${nameInputId}`}>Name</Label>
+        <Label htmlFor={`id-${nameInputId}`}>Name</Label>
         <Field
           id={`id-${nameInputId}`}
           type="text"
@@ -71,7 +71,7 @@ function ContactsForm() {
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="Номер телефона должен состоять из цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +"
         />
-        <ErrorMessage name="number" component={ValidationMessage} /></div>
+        <ErrorMessage name="number" component={ValidationMessage} />
 
         <Button type="submit">Add contact</Button>
       </FormWrapper>
